@@ -9,45 +9,71 @@ header {
 
 .logo {
   text-align: center;
-  display: block;
+  display: flex;
+  justify-content: center;
   width: 200px;
   height: 200px;
   border-radius: 100%;
   background: #fff;
-  margin-left: auto;
-  margin-right: auto;
+  margin: auto;
 }
 
 .logo img {
   width: 140px;
-  margin-top: 55px;
-  margin-left: auto;
-  margin-right: auto;
 }
 
+/* container */
+.container {
+  width: 100%;
+  margin: auto;
+}
+
+/* yearbook */
 .yearbook {
   display: flex;
   flex-flow: row wrap;
-  width: 80%;
-  margin-left: auto;
-  margin-right: auto;
+  justify-content: center;
 }
 
-.student_inner {
+/* items */
+.student {
   background-color: #FFAEC1;
   text-align: center;
   color: #000000;
-  width: 300px;
-  height: 420px;
+  width: 22%;
+  height: auto;
   font-family: 'Baloo Tammudu', cursive;
   line-height: 0.8;
-  margin: 5px;
+  margin: 10px;
   padding-top: 15px;
-  float: left;
   box-shadow: 5px 5px #AB2A20;
 }
 
-.student_inner img {
-  width: 270px;
+.student img {
+  width: 80%;
   height: auto;
+}
+
+/* Copied solution from Adam :) */
+.tba {
+  width: 22%;
+  margin: 10px;
+  padding-top: 15px;
+}
+
+/* tablet */
+@media (min-width: 600px) and (max-width: 900px) {
+  .student {
+    width: 40%
+  }
+  .tba {
+    width: 40%;
+  }
+}
+
+/* mobile */
+@media (max-width: 600px) {
+  .student {
+    width: 70%;
+  }
 }
